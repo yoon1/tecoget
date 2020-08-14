@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="700.0" maxWidth="900.0" minHeight="700.0" minWidth="900.0" prefHeight="700.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.yoon.tecoget.controller.RoomController">
+    <children>
+        <Button fx:id="exitButton" layoutX="836.0" layoutY="24.0" mnemonicParsing="false" onAction="#exitButtonActionHandler" prefHeight="50.0" prefWidth="50.0" text="Exit" />
+        <ListView fx:id="listUser" layoutX="23.0" layoutY="62.0" prefHeight="162.0" prefWidth="225.0" />
+        <TextArea layoutX="23.0" layoutY="241.0" prefHeight="329.0" prefWidth="225.0" wrapText="true" />
+        <RadioButton id="buttonRed" fx:id="buttonRed" layoutX="736.0" layoutY="206.0" maxWidth="-1.0" mnemonicParsing="false" onAction="#redButtonActionHandler" prefHeight="100.0" prefWidth="100.0" text="Red">
+            <toggleGroup>
+                <ToggleGroup fx:id="group1" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton id="buttonBlue" fx:id="buttonBlue" layoutX="736.0" layoutY="325.0" minHeight="-1.0" mnemonicParsing="false" onAction="#blueButtonActionHandler" prefHeight="100.0" prefWidth="100.0" text="Blue" toggleGroup="$group1" />
+        <RadioButton id="buttonBlack" fx:id="buttonBlack" layoutX="736.0" layoutY="93.0" mnemonicParsing="false" onAction="#blackButtonActionHandler" prefHeight="100.0" prefWidth="100.0" text="Black" toggleGroup="$group1" />
+        <RadioButton id="buttonErase" fx:id="buttonErase" layoutX="736.0" layoutY="436.0" mnemonicParsing="false" onAction="#eraseButtonActionHandler" prefHeight="100.0" prefWidth="100.0" text="Erase" toggleGroup="$group1" />
+        <Label fx:id="txtTime" layoutX="614.0" layoutY="20.0" prefHeight="42.0" prefWidth="181.0" text="TIME" />
+        <TextField layoutX="256.0" layoutY="577.0" prefWidth="467.0" />
+        <Label layoutX="23.0" layoutY="28.0" text="Room Number" />
+        <Label fx:id="txtAnswer" layoutX="437.0" layoutY="35.0" prefWidth="61.0" text="ANSWER" textAlignment="CENTER" />
+    </children>
+</AnchorPane>

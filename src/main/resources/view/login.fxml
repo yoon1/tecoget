@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" rotate="0.0" vgap="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.yoon.tecoget.controller.LoginController">
+  <children>
+    <AnchorPane id="archorPane" prefHeight="450.0" prefWidth="300.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <Button id="loginButton" fx:id="buttonLogin" blendMode="SRC_OVER" cache="false" cacheHint="DEFAULT" depthTest="INHERIT" layoutX="75.0" layoutY="298.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" mnemonicParsing="false" onAction="#loginButtonActionHandler" text="LOGIN" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" />
+        <Button id="exitButton" fx:id="buttonExit" layoutX="75.0" layoutY="345.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" mnemonicParsing="false" onAction="#exitButtonActionHandler" prefHeight="-1.0" text="EXIT" textAlignment="CENTER" textFill="WHITE" textOverrun="ELLIPSIS" />
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <padding>
+    <Insets />
+  </padding>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
